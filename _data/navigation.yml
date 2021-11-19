@@ -1,0 +1,13 @@
+main:
+  - title: "Home"
+    url: /
+  - title: "About me"
+    url: /about-me/
+  - title: "Posts"
+    url: /year-archive/
+  - title: "Categories"
+    url: /categories/
+  - title: Data Visualisations
+    url: /data-visualisations/
+  - title: "Contact"
+    url: /contact/
