@@ -93,8 +93,8 @@ analytics:
 author:
   name             : "George Holt"
   avatar           : /assets/images/george.jpg
-  bio              : "Physics PhD researcher, data enthusiast and AI practitioner."
-  location         : "Glasgow, UK"
+  bio              : "AI researcher and physics PhD."
+  location         : "Manchester, UK"
   email            : 
   links:
     - label: "george_holt77@yahoo.co.uk"
@@ -103,9 +103,9 @@ author:
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
-    - label: "@GeorgeKHolt"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/GeorgeKHolt/"
+    # - label: "@GeorgeKHolt"
+    #   icon: "fab fa-fw fa-twitter-square"
+    #   url: "https://twitter.com/GeorgeKHolt/"
     - label: "georgeholt1"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/georgeholt1/"
