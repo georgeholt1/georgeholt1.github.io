@@ -119,12 +119,12 @@ footer:
     # - label: "Twitter"
     #   icon: "fab fa-fw fa-twitter-square"
     #   url: "https://twitter.com/GeorgeKHolt/"
-    # - label: "GitHub"
-    #   icon: "fab fa-fw fa-github"
-    #   url: "https://github.com/georgeholt1/"
-    # - label: "george-k-holt"
-    #   icon: "fab fa-fw fa-linkedin-in"
-    #   url: "https://www.linkedin.com/in/george-k-holt/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/georgeholt1/"
+    - label: "george-k-holt"
+      icon: "fab fa-fw fa-linkedin-in"
+      url: "https://www.linkedin.com/in/george-k-holt/"
     # - label: "george_holt77@yahoo.co.uk"
     #   icon: "fas fa-fw fa-envelope-square"
     #   url: "mailto:george_holt77@yahoo.co.uk"
@@ -265,6 +265,6 @@ defaults:
       author_profile: true
       read_time: true
       comments: # true
-      share: true
+      share: false
       related: true
       show_date: true
