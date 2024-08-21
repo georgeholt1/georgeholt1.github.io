@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Tracking the Geospatial Centre of Human-Induced CO<sub>2</sub> Emissions Over Time
+title: Tracking the geospatial centre of human-induced CO<sub>2</sub> emissions over time
 categories: [Data analysis, Data visualisation, Climate, Python]
 toc: true
 toc_sticky: true

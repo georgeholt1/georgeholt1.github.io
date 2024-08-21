@@ -1,13 +1,11 @@
 ---
 layout: single
-title: Creating and Deploying an Interactive Investment Dashboard
+title: Creating and deploying an interactive investment dashboard
 categories: [Data analysis, Data visualisation, Python, Web development, Dashboards]
 toc: true
 toc_sticky: true
 date: 2024-04-05
 ---
-
-# Creating an Interactive Investment Dashboard
 
 ![App screenshot](../assets/images/investment_dash_app.png)
 
