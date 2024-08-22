@@ -130,6 +130,12 @@ runs:
         virtualenvs-create: true
         virtualenvs-in-project: true
 
+    - name: Configure poetry
+      id: configure-poetry
+      if: steps.cache-poetry.outputs.cache-hit
+      run: poetry config virtualenvs.in-project true
+      shell: bash
+
     - name: Set python version
       run: poetry env use python
       shell: bash
@@ -161,6 +167,8 @@ The `read-poetry-version` step reads the Poetry version from the `config.yml` fi
 The `cache-poetry` step checks for the existence of a cached version of Poetry and loads it if there's a cache hit. Per the [GitHub Actions caching documentation](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/caching-dependencies-to-speed-up-workflows), the `cache` action creates a cache of the directory specified in the `path` variable on a cache miss at the end of the job. The key is a combination of the runner OS and Poetry version, so a new cache is created if the runner OS changes or the Poetry version is updated.
 
 The `install-poetry` step installs the version of Poetry specified in the config file using the [snok/install-poetry](https://github.com/snok/install-poetry) action if there's no cache hit from the previous step.
+
+The `configure-poetry` step sets the `virtualenvs.in-project` configuration option to `true`. This option tells Poetry to create virtual environments in the project directory, which is used later to cache the virtual environment. The step executes only if there's a cache hit from the `cache-poetry` step, which means that the `install-poetry` step was skipped and poetry was not configured to create virtual environments in the project directory by the `snok/install-poetry` action.
 
 The `set-python-version` step sets the Python version to use with Poetry. Without this step, Poetry uses the system Python version, which has no guarantee of matching the version specified in the `config.yml` file.
 
@@ -331,3 +339,5 @@ One small caveat of the CD workflow is that, in order to generate a [PyPI API to
 The PyLich CI/CD is hopefully a sensible reference for setting up CI/CD for a Python package with GitHub Actions.
 
 Also, check out PyLich if you need a simple tool to spot broken links in a site that you're buliding. I integrated it as part of the CI for my static documentation sites and found it to be useful.
+
+> **_NOTE:_**  Updated on 2024-08-22 to include a fix to the dependency caching step.
