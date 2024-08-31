@@ -13,7 +13,7 @@ I recently came up with a probability puzzle while watching an episode of [Taskm
 
 On the surface, this problem seems simple. However, slightly tweaking the formulation can lead to a more interesting puzzle:
 
-> `n` contestants select an item from `m` possible unique items uniformly and with replacement. What is the probability that there are *exactly* no pairs?
+> `n` contestants select an item from `m` possible unique items uniformly and with replacement. What is the probability that there are **exactly** no pairs?
 
 In this post, I delve into both formulations, deriving the probabilities analytically and running [Monte Carlo](https://en.wikipedia.org/wiki/Monte_Carlo_method) simulations to validate the results.
 
