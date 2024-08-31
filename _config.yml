@@ -268,3 +268,4 @@ defaults:
       share: false
       related: true
       show_date: true
+      mathjax: true
