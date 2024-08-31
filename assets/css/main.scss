@@ -9,11 +9,12 @@ $type-size-2: 1.953em !default;
 $type-size-3: 1.563em !default;
 $type-size-4: 1.25em !default;
 $type-size-5: 1.1em !default;
-$type-size-5b: 0.9em !default;
+$type-size-5b: 0.95em !default;
 $type-size-6: 0.8em !default;
 $type-size-7: 0.8em !default;
 $type-size-8: 0.625em !default;
 
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'dark' }}";
 @import "minimal-mistakes";
 
 // This changes the code box
@@ -21,6 +22,6 @@ $type-size-8: 0.625em !default;
     margin: 0;
     padding: 0.5em;
     font-family: $monospace;
-    font-size: $type-size-8;
-    line-height: 0.5;
+    font-size: $type-size-5b;
+    line-height: 1.55;
   }
